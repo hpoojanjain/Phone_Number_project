@@ -74,9 +74,9 @@ public:
     }
     for (auto p : n->childs)
     {
-      string nextacc = acc;
-      nextacc.push_back(p.first);
-      traverse(p.second, ans, nextacc);
+      // string nextacc = acc;
+      acc.push_back(p.first);
+      traverse(p.second, ans, acc);
     }
   }
 };
